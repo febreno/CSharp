@@ -43,8 +43,8 @@ public class car
 	}
 }
 ```
-```
-            //method
+```csharp
+//method
 static void Main(string[] args)
 {
     SayHi("July", 19);
@@ -65,5 +65,6 @@ static double cube(int num);
     int result = num * num * num * num);
     return result;
 }
+```
 useful links
 [Learn](https://onlinecursosgratuitos.com/10-apostilas-de-linguagem-c-c-e-c-para-download-em-pdf/)
