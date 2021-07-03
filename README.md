@@ -43,5 +43,27 @@ public class car
 	}
 }
 ```
+```
+            //method
+static void Main(string[] args)
+{
+    SayHi("July", 19);
+    SayHi("Jeffersson", 23);
+    SayHi("Cleiton", 33);
+
+    int cubeNumber = cube(5);
+    Console.WriteLine(cubeNumber);
+
+    Console.ReadLine();
+}
+static void SayHi(string name, int age)
+{
+    Console.WriteLine("Hello User" + name + "you are" + age);
+}
+static double cube(int num);
+{
+    int result = num * num * num * num);
+    return result;
+}
 useful links
 [Learn](https://onlinecursosgratuitos.com/10-apostilas-de-linguagem-c-c-e-c-para-download-em-pdf/)
