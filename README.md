@@ -25,16 +25,22 @@ define a instancia da classe
 #### EXEMPO CLASS/OBJ
 
 ```csharp
-public class Pessoa {
-    private String nome;
 
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+public class car
+{
+    	var car = new Object(); //create Obj
+	car.fabrication = "Ford"; //info Obj
+	car.model = "Mustang";
+	car.year = 1969;
+	
+	public String getCar() 
+	{
+        	return car;
+    	}
+	public void setModel(String model)
+	{
+		this.model = model;
+	}
 }
 ```
 useful links
