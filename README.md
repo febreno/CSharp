@@ -11,7 +11,7 @@ Define conjunto de objeto(s) define o que os objetos são e como se comportam
 Objetos ficam dentro de classes
 #### OBJETO
 estado (propriedades, valores), comportamento(como ele vai reagir com outros objetos), entidade(identificador do objeto)
-define a instancia da classe
+representa instancia da classe
 
 #### OOP/POO
 - Abstração
