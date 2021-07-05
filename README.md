@@ -77,6 +77,26 @@ public class ContaPoupanca : BaseClass
 {
 	//...
 }
+
+//other form
+abstract class Conta 
+{
+
+	private double saldo;
+
+	public void setSaldo(double saldo)
+	{
+		this.saldo = saldo;
+	}
+
+	public double getSaldo() 
+	{
+		return saldo;
+	}
+
+	public abstract void imprimeExtrato();
+
+}
 ```
 tabem temos metodos abstratos
 ```csharp
@@ -121,7 +141,7 @@ class NotaFiscal: IDisposable {
 
 class ItemNotaFiscal: IDisposable { ... }
 ```
-#### AGRAGACAO
+#### AGREGACAO
 ```csharp
 class Time {
     IList<Pessoa> Integrantes {get;set;}
@@ -129,17 +149,8 @@ class Time {
 
 class Pessoa {}
 ```
-03
-Mini projeto exemplo
-Calcular o saldo de uma conta(saldo nunca pode ter um valor neg)
-Criar variavei que no final retornan a funcao na propria classe
-Registro de contas
-Conta
-Data
-Conta corrente
 
-04
-HERANCA
+#### HERANCA
 Hierarquisazacao
 Associacao 1 para 1, 1 para 2
 sub-classe herda de super classe 
@@ -157,12 +168,95 @@ desvantagens aumenta o acoplamento da classe(uma alteração na implementação 
 casse generica = class object
 toString() hashcode() equals()
 
+```csharp
+//create class
+class Chef
+{
+	public void MakeChicken()
+	{
+		Console.writeLine("The chef makes chiken");
+	}
+
+	public void MakeSalad()
+	{
+		Console.writeLine("The chef makes salad");
+	}
+
+	public void MakeSpecialDish()
+	{
+		Console.writeLine("The chef makes barbeque ribs");
+	}
+}
+
+//create herance class, other file
+class ItaliaChef : Chef //the italian chef has the same caracteristics
+{
+	public override void MakeSpecialDish()//override from super class
+	{
+		Console.writeLine("The chef makes chicken parm");
+	}
+	
+	public void MakePasta()
+	{
+		Console.WriteLine("The italian chef makes pasta");
+	}
+}
+```
+
 #### POLIMORFISMO
 relacao de individuos ex: macacos, baleias, passaro todos pertence a seres vivos
 exemplificacao que ambos se reagem a diferente forma de se mover
 voce nao pode puxar um dado da casse principal
+```csharp
+public class Vehicle
+{
+	private string tipo;
+	public string Tipo
+	{
+		get{ return = tipo;}
+		set{ tipo = value;}
+	}
+	
+	public Vehicle(string tipoVehicle)
+	{
+		this.tipo = tipoVehicle;
+	}
+	
+	public virtual void Move()
+	{}
+}
 
-#### INTERFACES(polimorfismo)
+//other file
+public class Airplane : Vehicle
+{
+	public Airplane(string tipoVehicle)
+	: base(tipoVehicle)
+	{}
+	
+	public override void Move()
+	{
+		Console.WriteLine("Fly");
+	}
+}
+
+//other file
+public class Car : Vehicle
+{
+	public Car(string tipoVehicle)
+	: base(tipoVehicle)
+	{}
+	
+	public override void Move()
+	{
+		Console.WriteLine("Run");
+	}
+}
+```
+
+###### INTERFACES(polimorfismo)
+interfaces
+- classes abstratas
+- classes concretas
 substitui class
 Assinatura de uma classe que obriga ela a passar todos os metodos(funcoes)
 metodos default
@@ -182,37 +276,28 @@ Como vetores mas nao necessariamente acessiveis pelo indice
 Nao sao dinamicos(ficar mudando o valor, vai precisar usar clone)
 utiliza o reuso
 Interface Collection
-Interface List
-AddAll(int index, Collection c)
-SubList(int fromindex, int toIndex)
-List
-ArrayList
-metodos nao sincronizados
-Vector
-metodos assincronos(multithred)
-LinkedList
-mais rapido que os dois, implementa com listas ligadas
-
-#### COLLECTIONS
-
-interator()
-it.hasnext() ve se existe um prox elemento sreturn boolean
-it.next()
-Listiterator(int index) > indice list
-Classe Colections(static methods)busca, ordenacao, comparacao
-sort(list)
-binarySearch(list,key)
-reverse(list)
-suffle(list) 'embaralha'
-min()
-max()
-frequency()
-int result=Collections.frequency(list,key)
-disjoint(list1,list2)
-bool result=Collections.disjoint(list1,list2)
-interfaces
-classes abstratas
-classes concretas
+- Interface List
+- AddAll(int index, Collection c)
+- SubList(int fromindex, int toIndex)
+- List
+- ArrayList > metodos nao sincronizados
+- Vector > metodos assincronos(multithred)
+- LinkedList > mais rapido que os dois, implementa com listas ligadas
+- interator()
+- it.hasnext() ve se existe um prox elemento sreturn boolean
+- it.next()
+- Listiterator(int index) > indice list
+- Classe Colections(static methods)busca, ordenacao, comparacao
+- sort(list)
+- binarySearch(list,key)
+- reverse(list)
+- suffle(list) 'embaralha'
+- min()
+- max()
+- frequency()
+- int result=Collections.frequency(list,key)
+- disjoint(list1,list2)
+- bool result=Collections.disjoint(list1,list2)
 
 Interface Set
 retainAll()clac semelhance
