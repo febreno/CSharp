@@ -16,7 +16,9 @@ public class car //crate class
 }
 ```
 #### OBJETO
-estado (propriedades, valores), comportamento(como ele vai reagir com outros objetos), entidade(identificador do objeto)
+- Estado (propriedades, valores) 
+- comportamento(como ele vai reagir com outros objetos)
+- Entidade(identificador do objeto)
 representa instancia da classe
 ```csharp
 public class car //crate class
@@ -38,8 +40,8 @@ public class car //crate class
 ```
 #### METODOS
 Um método é um bloco de código que contém uma série de instruções. Um programa faz com que as instruções sejam executadas chamando o método e especificando os argumentos de método necessários
-//Accessor methods: getNameAttribute
-//Modifier methods: setNameAttribute
+- Accessor methods: getNameAttribute (getValue)
+- Modifier methods: setNameAttribute (setValue)
 ```csharp
 static void Main() //Main is a method
 {
@@ -129,12 +131,12 @@ class Pessoa {}
 ```
 03
 Mini projeto exemplo
-	Calcular o saldo de uma conta(saldo nunca pode ter um valor neg)
-	criar variavei que no final retornan a funcao na propria classe
-	Registro de contas
-	Conta
-	Data
-	Conta corrente
+Calcular o saldo de uma conta(saldo nunca pode ter um valor neg)
+Criar variavei que no final retornan a funcao na propria classe
+Registro de contas
+Conta
+Data
+Conta corrente
 
 04
 HERANCA
@@ -197,20 +199,20 @@ interator()
 it.hasnext() ve se existe um prox elemento sreturn boolean
 it.next()
 Listiterator(int index) > indice list
-	Classe Colections(static methods)busca, ordenacao, comparacao
-	sort(list)
-	binarySearch(list,key)
-	reverse(list)
-	suffle(list) 'embaralha'
-	min()
-	max()
-	frequency()
-		int result=Collections.frequency(list,key)
-	disjoint(list1,list2)
-		bool result=Collections.disjoint(list1,list2)
-	interfaces
-	classes abstratas
-	classes concretas
+Classe Colections(static methods)busca, ordenacao, comparacao
+sort(list)
+binarySearch(list,key)
+reverse(list)
+suffle(list) 'embaralha'
+min()
+max()
+frequency()
+int result=Collections.frequency(list,key)
+disjoint(list1,list2)
+bool result=Collections.disjoint(list1,list2)
+interfaces
+classes abstratas
+classes concretas
 
 Interface Set
 retainAll()clac semelhance
@@ -276,33 +278,9 @@ classe generica
 	readObject()
 	Fluxo de bytes
 	Inputstream OutputStream
-14
-execucao de codigo:
+
+#### execucao de codigo
 Correntes x paralelo
-#### EXEMPO CLASS/OBJ
-
-```csharp
-//method
-static void Main(string[] args)
-{
-    SayHi("July", 19);
-    SayHi("Jeffersson", 23);
-    SayHi("Cleiton", 33);
-
-    int cubeNumber = cube(5);
-    Console.WriteLine(cubeNumber);
-
-    Console.ReadLine();
-}
-static void SayHi(string name, int age)
-{
-    Console.WriteLine("Hello User" + name + "you are" + age);
-}
-static double cube(int num);
-{
-    int result = num * num * num * num);
-    return result;
-}
-```
+	
 useful links
 [Learn](https://onlinecursosgratuitos.com/10-apostilas-de-linguagem-c-c-e-c-para-download-em-pdf/)
