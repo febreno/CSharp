@@ -55,15 +55,30 @@ Com loop (executara em quanto, usado em listas)
 - while do, for each
 
 #### ARRAY
-
-#### DICTIONARY
+A estrutura basica de um array
 ```csharp
 int[] luckyNumbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; //Array
-string[] friends = new string[5];
-friends[0] = "mike";
-friends[1] = "Jelly";
-Console.WriteLine(luckyNumbers[0]);
+// Tipodedado[] nomeArray = new tipodedado [tamanhoArray];
 ```
+#### LIST
+```csharp
+string[] input = { "Brachiosaurus",
+	"Amargasaurus",
+	"Mamenchisaurus" };
+
+List<string> dinosaurs = new List<string>(input); //create a list
+
+Console.WriteLine("\nCapacity: {0}", dinosaurs.Capacity);
+
+Console.WriteLine();
+foreach( string dinosaur in dinosaurs )
+{
+Console.WriteLine(dinosaur);
+}
+```
+
+#### DICTIONARY
+
 
 #### OOP/POO
 - Abstração
@@ -311,7 +326,13 @@ Interface Collection
 - reverse(list)
 - suffle(list) 'embaralha'
 - min()
+- ```csharp
+Console.WriteLine(Math.min(1, 2));//min value
+```
 - max()
+```csharp
+Console.WriteLine(Math.Max(1, 2));//Max value
+```
 - frequency()
 - int result=Collections.frequency(list,key)
 - disjoint(list1,list2)
@@ -386,4 +407,5 @@ classe generica
 Correntes x paralelo
 	
 useful links
+[Microsoft](https://docs.microsoft.com/pt-br/dotnet/api/system.collections.generic.list-1.getrange?view=net-5.0)
 [Learn](https://onlinecursosgratuitos.com/10-apostilas-de-linguagem-c-c-e-c-para-download-em-pdf/)
