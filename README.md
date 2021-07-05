@@ -51,6 +51,7 @@ static void Main() //Main is a method
 #### CONDICIONAIS
 Sem loop (executara se)
 - if else, swith case
+
 Com loop (executara em quanto, usado em listas)
 - while do, for each
 
