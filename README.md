@@ -50,7 +50,7 @@ static void Main() //Main is a method
 ```
 #### CONDICIONAIS
 Sem loop (executara se)
-= if else, swith case
+- if else, swith case
 Com loop (executara em quanto, usado em listas)
 - while do, for each
 
@@ -407,5 +407,5 @@ classe generica
 Correntes x paralelo
 	
 useful links
-[Microsoft](https://docs.microsoft.com/pt-br/dotnet/api/system.collections.generic.list-1.getrange?view=net-5.0)
-[Learn](https://onlinecursosgratuitos.com/10-apostilas-de-linguagem-c-c-e-c-para-download-em-pdf/)
+- [Microsoft](https://docs.microsoft.com/pt-br/dotnet/api/system.collections.generic.list-1.getrange?view=net-5.0)
+- [Learn](https://onlinecursosgratuitos.com/10-apostilas-de-linguagem-c-c-e-c-para-download-em-pdf/)
