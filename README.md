@@ -36,11 +36,22 @@ public class car //crate class
 	}
 }
 ```
+#### METODOS
+Um método é um bloco de código que contém uma série de instruções. Um programa faz com que as instruções sejam executadas chamando o método e especificando os argumentos de método necessários
+//Accessor methods: getNameAttribute
+//Modifier methods: setNameAttribute
+```csharp
+static void Main() //Main is a method
+{
+	Console.WriteLine("My top speed is {0}", speed);
+}
+```
 
 #### OOP/POO
 - Abstração
 - Encapsulamento
-- Composição/agregação
+- Composição
+- Agregação
 - herança
 - Polimorfismo
 - Modularidade
@@ -53,30 +64,69 @@ interfaces ou classes que escondam algo
 ex: seu carro estava com probema vc levou no concerto e ele voltou arrumado, 
 o processo que ele passou para arrumar nao e tao relevante para voce o que importa
 e que ele esta funcionando
+```csharp
+public class BaseClass
+{
+	int exempleNum = 18;
+}
+
+//Other file
+public class ContaPoupanca : BaseClass
+{
+	//...
+}
+```
+tabem temos metodos abstratos
+```csharp
+public abstract void MyMethod(); //abstract method
+```
 
 #### ENCAPSULAMENTO
 Um obj nao pode alterar outro(privar)
 Atributos privados ou protegidos
 modificadores de acesso
-Metodos acessadores
-	getNomeAtributo
-Metodos modificadores
-	setNomeAtributo
 this
 resolve problema de ambiguidade relacionada ao objeto
 uso do if
 
 Nao perder a essencia do encapsulamento
-DESTRUIDORES
 Pessoa a1 = new Pessoa ("Ana",25)
 a var a1 nao guarda o objeto, mas sim faz referencia a ele do tipo pessoa
 classe statica pode ser acessada somente por ela mesmo
 variavel statica ex: int
+```csharp
+class Conta
+{
+    private double saldo;
 
-#### COMPOSICAO/AGRAGACAO
+    private int numero;
+
+    // outros atributos e métodos da conta
+
+    public double PegaSaldo() 
+    {
+        return this.saldo;
+    }
+}
+```
+#### COMPOSICAO
 relacionamento
 dar um new obj na sub-classe da super classe e dar um new obj desta mesmaclasse
+```csharp
+class NotaFiscal: IDisposable {
+    IList<ItemNotaFiscal> Itens {get;set;}
+}
 
+class ItemNotaFiscal: IDisposable { ... }
+```
+#### AGRAGACAO
+```csharp
+class Time {
+    IList<Pessoa> Integrantes {get;set;}
+}
+
+class Pessoa {}
+```
 03
 Mini projeto exemplo
 	Calcular o saldo de uma conta(saldo nunca pode ter um valor neg)
@@ -124,6 +174,7 @@ Contains()
 Remove()
 Add()
 Size()
+
 #### COLLECTIONS
 Como vetores mas nao necessariamente acessiveis pelo indice
 Nao sao dinamicos(ficar mudando o valor, vai precisar usar clone)
