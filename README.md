@@ -52,7 +52,7 @@ static void Main() //Main is a method
 Sem loop (executara se)
 - if else, swith case
 
-Com loop (executara em quanto, usado em listas)
+Com loop (executara enquanto, usado em listas)
 - while do, for each
 
 #### ARRAY
