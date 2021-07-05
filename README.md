@@ -48,6 +48,22 @@ static void Main() //Main is a method
 	Console.WriteLine("My top speed is {0}", speed);
 }
 ```
+#### CONDICIONAIS
+Sem loop (executara se)
+= if else, swith case
+Com loop (executara em quanto, usado em listas)
+- while do, for each
+
+#### ARRAY
+
+#### DICTIONARY
+```csharp
+int[] luckyNumbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; //Array
+string[] friends = new string[5];
+friends[0] = "mike";
+friends[1] = "Jelly";
+Console.WriteLine(luckyNumbers[0]);
+```
 
 #### OOP/POO
 - Abstração
@@ -122,8 +138,21 @@ class Conta
 ```
 #### COMPOSICAO
 relacionamento
+Composições são blocos de construção críticos de muitas estruturas de dados básicas, incluindo a união rotulada, lista ligada e árvore binária, bem como o objeto utilizado em programação orientada a objetos. ... Objetos compostos são frequentemente referidos como tendo um relacionamento "tem um".
 dar um new obj na sub-classe da super classe e dar um new obj desta mesmaclasse
 ```csharp
+class Usuarios {
+    class Comum
+    {
+    	//...
+    }
+    class Adm
+    {
+    	//...
+    }
+}
+
+//other form
 class NotaFiscal: IDisposable {
     IList<ItemNotaFiscal> Itens {get;set;}
 }
