@@ -7,8 +7,14 @@
 	Criar classe separar cada tratacao em calsses
   
 #### CLASSES
-Define conjunto de objeto(s) define o que os objetos são e como se comportam
-Objetos ficam dentro de classes
+Define objeto(s) define o que os objetos são e como se comportam
+Objetos ficam dentro de classes, cada classe pode ter mais que um objeto
+```csharp
+public class car //crate class
+{
+    //content class
+}
+```
 #### OBJETO
 estado (propriedades, valores), comportamento(como ele vai reagir com outros objetos), entidade(identificador do objeto)
 representa instancia da classe
@@ -40,16 +46,6 @@ public class car //crate class
 - Modularidade
 - Mensagens
 
-	
-	ENCAPSULAMENTO
-	COMPOSICAO/AGRAGACAO
-		relacionamento
-		dar um new obj na sub-classe da super classe e dar um new obj desta mesmaclasse
-	HERANCA
-	POLIMORFISMO
-	MODULARIDADE
-		
-	MENSAGENS
 #### ABSTRACAO
 extrair informacoes e principais caracteristicas
 caracteristicas em comum aos objetos
@@ -59,23 +55,27 @@ o processo que ele passou para arrumar nao e tao relevante para voce o que impor
 e que ele esta funcionando
 
 #### ENCAPSULAMENTO
-	Um obj nao pode alterar outro(privar)
-	Atributos privados ou protegidos
-	modificadores de acesso
-	Metodos acessadores
-		getNomeAtributo
-	Metodos modificadores
-		setNomeAtributo
-	this
-		resolve problema de ambiguidade relacionada ao objeto
-	uso do if
+Um obj nao pode alterar outro(privar)
+Atributos privados ou protegidos
+modificadores de acesso
+Metodos acessadores
+	getNomeAtributo
+Metodos modificadores
+	setNomeAtributo
+this
+resolve problema de ambiguidade relacionada ao objeto
+uso do if
 
-	Nao perder a essencia do encapsulamento
-	DESTRUIDORES
-	Pessoa a1 = new Pessoa ("Ana",25)
-	a var a1 nao guarda o objeto, mas sim faz referencia a ele do tipo pessoa
-	classe statica pode ser acessada somente por ela mesmo
-	variavel statica ex: int
+Nao perder a essencia do encapsulamento
+DESTRUIDORES
+Pessoa a1 = new Pessoa ("Ana",25)
+a var a1 nao guarda o objeto, mas sim faz referencia a ele do tipo pessoa
+classe statica pode ser acessada somente por ela mesmo
+variavel statica ex: int
+
+#### COMPOSICAO/AGRAGACAO
+relacionamento
+dar um new obj na sub-classe da super classe e dar um new obj desta mesmaclasse
 
 03
 Mini projeto exemplo
@@ -88,63 +88,63 @@ Mini projeto exemplo
 
 04
 HERANCA
-	Hierarquisazacao
-	Associacao 1 para 1, 1 para 2
-	sub-classe herda de super classe 
-	reutilizar ou modificar metodos de classes ja existentes
-	somente 1 superclasse pode ter N subClasses
-		exemplo de transporte
-	modificadores de acesso public, private, protected(visibilidade para subclasses)
+Hierarquisazacao
+Associacao 1 para 1, 1 para 2
+sub-classe herda de super classe 
+reutilizar ou modificar metodos de classes ja existentes
+somente 1 superclasse pode ter N subClasses
+exemplo de transporte
+modificadores de acesso public, private, protected(visibilidade para subclasses)
 
-	usando o "super" para chamar o construtor e adicionando nas sub classes
+usando o "super" para chamar o construtor e adicionando nas sub classes
 
-	vantagens economizar tempo
-	desvantagens aumenta o acoplamento da classe(uma alteração na implementação de um método numa classe base pode provocar anomalias nas suas classes derivadas),
- 	tira o encapsulamento, -flexivel +complexo
+vantagens economizar tempo
+desvantagens aumenta o acoplamento da classe(uma alteração na implementação de um método numa classe base pode provocar anomalias nas suas classes derivadas),
+ tira o encapsulamento, -flexivel +complexo
 
-	casse generica = class object
-	toString() hashcode() equals()
+casse generica = class object
+toString() hashcode() equals()
 
 #### POLIMORFISMO
-	relacao de individuos ex: macacos, baleias, passaro todos pertence a seres vivos
-	exemplificacao que ambos se reagem a diferente forma de se mover
-	voce nao pode puxar um dado da casse principal
+relacao de individuos ex: macacos, baleias, passaro todos pertence a seres vivos
+exemplificacao que ambos se reagem a diferente forma de se mover
+voce nao pode puxar um dado da casse principal
 
 #### INTERFACES(polimorfismo)
-	substitui class
-	Assinatura de uma classe que obriga ela a passar todos os metodos(funcoes)
-	metodos default
-	evite heranca, prefira composicao
+substitui class
+Assinatura de uma classe que obriga ela a passar todos os metodos(funcoes)
+metodos default
+evite heranca, prefira composicao
 
-	Interface funcional
-	Comparable(Object o)
-	clone() usado no return para uma outra classe nao conseguir alterar este
-	Collection, List, Set = interfaces
-	Contains()
-	Remove()
-	Add()
-	Size()
+Interface funcional
+Comparable(Object o)
+clone() usado no return para uma outra classe nao conseguir alterar este
+Collection, List, Set = interfaces
+Contains()
+Remove()
+Add()
+Size()
 #### COLLECTIONS
-	Como vetores mas nao necessariamente acessiveis pelo indice
-	Nao sao dinamicos(ficar mudando o valor, vai precisar usar clone)
-	utiliza o reuso
-	Interface Collection
-	Interface List
-		AddAll(int index, Collection c)
-		SubList(int fromindex, int toIndex)
-	List
-	ArrayList
-	metodos nao sincronizados
-	Vector
-	metodos assincronos(multithred)
-	LinkedList
-	mais rapido que os dois, implementa com listas ligadas
+Como vetores mas nao necessariamente acessiveis pelo indice
+Nao sao dinamicos(ficar mudando o valor, vai precisar usar clone)
+utiliza o reuso
+Interface Collection
+Interface List
+AddAll(int index, Collection c)
+SubList(int fromindex, int toIndex)
+List
+ArrayList
+metodos nao sincronizados
+Vector
+metodos assincronos(multithred)
+LinkedList
+mais rapido que os dois, implementa com listas ligadas
 
 #### COLLECTIONS
 
-	interator()
-		it.hasnext() ve se existe um prox elemento sreturn boolean
-		it.next()
+interator()
+it.hasnext() ve se existe um prox elemento sreturn boolean
+it.next()
 Listiterator(int index) > indice list
 	Classe Colections(static methods)busca, ordenacao, comparacao
 	sort(list)
@@ -161,48 +161,48 @@ Listiterator(int index) > indice list
 	classes abstratas
 	classes concretas
 
-	Interface Set
-		retainAll()clac semelhance
-		addAll()calc mais de uma list
-		removeAll()uma subtraindo a outra
-	Interfce Map
-		key = value
-		put(object key, object value)
-		get(object key)
-		remove(object key)
+Interface Set
+retainAll()clac semelhance
+addAll()calc mais de uma list
+removeAll()uma subtraindo a outra
+Interfce Map
+key = value
+put(object key, object value)
+get(object key)
+remove(object key)
 
-		operacao de volume
-		putAll()
-		keySet()
-		values()		
-		clear()
+operacao de volume
+putAll()
+keySet()
+values()		
+clear()
 		
-		int size()		
-		boolean inEmpty()
-		boolean containsKey(Object key)
-		boolean containsValue(Object value)
-	TreeSet treeMap(mapas ordenados)
-		headSet()
-		tailSet()
-		first()primeiro elemento
-		last()ultimo elemento
-		
-	HashSet HashMap
+int size()		
+boolean inEmpty()
+boolean containsKey(Object key)
+boolean containsValue(Object value)
+TreeSet treeMap(mapas ordenados)
+headSet()
+tailSet()
+first()primeiro elemento
+last()ultimo elemento
+	
+HashSet HashMap
 
-	treeSet gasta O(log(n))
-	hashset gasta O(n) constante, tabela de espenhamento
+treeSet gasta O(log(n))
+hashset gasta O(n) constante, tabela de espenhamento
 
 
 #### Classes e metodos genericos
-	modos de listagem
-	integerArray = {1,2,3,4,5}
-	doubleArray = {1.1,2.2,3.3,4.4,5.5}
+modos de listagem
+integerArray = {1,2,3,4,5}
+doubleArray = {1.1,2.2,3.3,4.4,5.5}
 	
-	sessao de parametros de tipo
-	public static <T> void printArray(T[] inputArray)
+sessao de parametros de tipo
+public static <T> void printArray(T[] inputArray)
 
-	metodos genericos
-	classe generica
+metodos genericos
+classe generica
 
 #### tratamento de excecoes
 	forma sequecial se der erro na primeira linha do catch
