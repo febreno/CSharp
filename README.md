@@ -67,17 +67,6 @@ ex: seu carro estava com probema vc levou no concerto e ele voltou arrumado,
 o processo que ele passou para arrumar nao e tao relevante para voce o que importa
 e que ele esta funcionando
 ```csharp
-public class BaseClass
-{
-	int exempleNum = 18;
-}
-
-//Other file
-public class ContaPoupanca : BaseClass
-{
-	//...
-}
-
 //other form
 abstract class Conta 
 {
