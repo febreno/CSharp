@@ -122,7 +122,7 @@ private static void Add(string strKey, object dataType)
 		
 		try
 		{
-		
+			retType = (T)obj;
 		}
 		catch
 		{
