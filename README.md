@@ -160,7 +160,10 @@ private static void Add(string strKey, object dataType)
 - Modularidade
 - Mensagens
 
-#### ABSTRACAO
+#### ABSTRACT/SELAD
+- abstratas
+feita para ser herdada, nao instanciada
+
 extrair informacoes e principais caracteristicas
 caracteristicas em comum aos objetos
 interfaces ou classes que escondam algo
@@ -169,7 +172,7 @@ o processo que ele passou para arrumar nao e tao relevante para voce o que impor
 e que ele esta funcionando
 ```csharp
 //other form
-abstract class Conta 
+abstract class EntityBase 
 {
 
 	private double saldo;
@@ -184,13 +187,29 @@ abstract class Conta
 		return saldo;
 	}
 
-	public abstract void imprimeExtrato();
+	public abstract void imprimeExtrato(); //abstract method
 
 }
+
+//acess by other class
+public class Account : EntityBase
+{
+        public double getSaldo() 
+	{
+		return true; //pode mudar o retorno
+	}
+}
 ```
-tabem temos metodos abstratos
+
+- selad
+nao pode ser herdada(geralmente se coloca no final do codigo para nao modificarem um valor)
 ```csharp
-public abstract void MyMethod(); //abstract method
+public sealed class ProdutoRequest //selad
+{
+	public string Descricao { get; set; }
+        public decimal Valor { get; set; }
+        public string Categoria { get; set; }
+}
 ```
 
 #### ENCAPSULAMENTO
