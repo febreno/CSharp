@@ -48,6 +48,26 @@ static void Main() //Main is a method
 	Console.WriteLine("My top speed is {0}", speed);
 }
 ```
+#### CONSTRUTORES
+```csharp
+public class Produtos
+{
+        public Produtos(int Id)
+        {
+            Complementos = new List<Complemento>();
+            this.Id = Id;
+        }
+}
+
+//other file
+public class Complemento
+    {
+        public int Id { get; set; }
+        public string Descricao { get; set; }
+        public decimal Valor { get; set; }
+    }
+```
+
 #### CONDICIONAIS
 Sem loop (executara se)
 - if else, swith case
@@ -152,6 +172,7 @@ private static void Add(string strKey, object dataType)
 
 #### OOP/POO
 - Abstração
+- Generic
 - Encapsulamento
 - Composição
 - Agregação
@@ -209,6 +230,21 @@ public sealed class ProdutoRequest //selad
 	public string Descricao { get; set; }
         public decimal Valor { get; set; }
         public string Categoria { get; set; }
+}
+```
+#### GENERIC CLASS
+tipos genericos
+GenericClassTypes<T> // T pode ser string, int, obj...(algo generico)
+metodo com tipo generico
+	
+```csharp
+public class GenericClassTypes<T> where T : EntityBase
+{
+	public GenericClassTypes()
+        {
+            MinhaLista = new List<T>();
+        }
+        public List<T> MinhaLista { get; set; }
 }
 ```
 
