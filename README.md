@@ -58,9 +58,27 @@ Com loop (executara em quanto, usado em listas)
 #### ARRAY
 A estrutura basica de um array
 ```csharp
-int[] luckyNumbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; //Array
 // Tipodedado[] nomeArray = new tipodedado [tamanhoArray];
+int[] luckyNumbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; //Array int
+int[] luckyNumbers = { "name1", "name2", "name3" }; //Array string
 ```
+Voce pode add() remove()...
+```csharp
+ArrayList a1 = new ArrayList(); //create array
+ArrayList.add(element) //kind of const
+```
+Um exemplo mais estruturado, parecido com um dicionario
+```csharp
+string[] names = new string[4];
+names[0] = "Abner";
+names[1] = "Jhon";
+names[2] = "Frank";
+names[3] = "July";
+
+Console.WriteLine(names[2]);
+//return: Frank
+```
+
 #### LIST
 ```csharp
 string[] input = { "Brachiosaurus",
@@ -79,6 +97,57 @@ Console.WriteLine(dinosaur);
 ```
 
 #### DICTIONARY
+A estrutura do dicionario
+- Key = Value
+```csharp
+private static Dctionary<string, object> dict;
+
+private static void Add(string strKey, object dataType)
+{
+	if(!dict.ContainsKey(strKey))
+	{
+		dict.Add(strKey, dataType);
+	}
+	else
+	{
+		dict[strKey] = dataType;
+	}
+	
+	private staic T GetAnyValue<T>(string strKey)
+	{
+		object obj;
+		T retType;
+		
+		dict.TryGetValue(strKey, out obj);
+		
+		try
+		{
+		
+		}
+		catch
+		{
+			retType = default(T);
+		}
+		return retType;
+		
+		static void Main(string[] args)
+		{
+			dict = new Dictionary<string, object>();
+			
+			//key = value
+			Add("pi", 3.14159);
+			Add("delta", "b*b -4*a*c");
+			Add("",)
+			
+			Console.WriteLine("pi" + GetAnyValue<duble>("pi"));
+			Console.WriteLine("pi" + GetAnyValue<string>("delta"));
+			
+			Console.ReadLine();
+		}
+	}
+}
+```
+
 
 
 #### OOP/POO
