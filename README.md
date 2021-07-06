@@ -48,10 +48,21 @@ public class car //crate class
 Um método é um bloco de código que contém uma série de instruções. Um programa faz com que as instruções sejam executadas chamando o método e especificando os argumentos de método necessários
 - Accessor methods: getNameAttribute (getValue)
 - Modifier methods: setNameAttribute (setValue)
+- ...
 ```csharp
-static void Main() //Main is a method
+static void Main()
 {
-	Console.WriteLine("Hello World!");
+	int = n1,n2,r;
+	n1 = Convert.ToInt32(Console.ReadLine());
+	n2 = Convert.ToInt32(Console.ReadLine());
+	r = Som(n1,n2)
+	Cosole.WriteLine($"n1+n2="{r});
+	
+}
+static int Som(int n1, int n2) //som is a method
+{
+	int result = n1+n2;
+	return result;
 }
 ```
 #### CONSTRUTORES
