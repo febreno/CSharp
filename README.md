@@ -9,6 +9,12 @@
 #### CLASSES
 Define objeto(s) define o que os objetos são e como se comportam
 Objetos ficam dentro de classes, cada classe pode ter mais que um objeto
+modificadores de acesso:
+- public (completamente acessivel)
+- private (consegue acessar herdando ou dentro dela mesma)
+- protected (acessivel somente para classes derivadas)
+- internal (acessivel pela propria classe)
+- protected internal (acessível por classe derivada e se o acesso ocorre por meio de uma variável do tipo de classe derivada.)
 ```csharp
 public class car //crate class
 {
@@ -45,7 +51,7 @@ Um método é um bloco de código que contém uma série de instruções. Um pro
 ```csharp
 static void Main() //Main is a method
 {
-	Console.WriteLine("My top speed is {0}", speed);
+	Console.WriteLine("Hello World!");
 }
 ```
 #### CONSTRUTORES
