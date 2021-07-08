@@ -118,8 +118,8 @@ for (int i = 0; i < vetor1.Length; i++)
 A estrutura basica de um array
 ```csharp
 // Tipodedado[] nomeArray = new tipodedado [tamanhoArray];
-int[] luckyNumbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; //Array int
-int[] luckyNumbers = { "name1", "name2", "name3" }; //Array string
+int[] arrayNumbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; //Array int
+string[] arrayNames = { "name1", "name2", "name3" }; //Array string
 ```
 Voce pode add() remove()...
 ```csharp
