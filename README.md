@@ -89,8 +89,25 @@ public class Complemento
 Sem loop (executara se)
 - if else, swith case
 
-Com loop (executara enquanto, usado em listas)
-- while do, for each
+Com loop (executara enquanto(causas constantes), usado em listas, arrays)
+- foreach
+```csharp
+//create var n / select var
+foreach (int n in nameVar)
+{
+	Console.WriteLine(n);
+}
+//return all inside nameVar
+```
+- for
+```csharp
+//i=start in 0; i contue list < var; list one by one
+for (int i = 0; i < vetor1.Length; i++)
+{
+	return i;//list
+}
+```
+- while do
 
 #### ARRAY
 A estrutura basica de um array
@@ -102,7 +119,10 @@ int[] luckyNumbers = { "name1", "name2", "name3" }; //Array string
 Voce pode add() remove()...
 ```csharp
 ArrayList a1 = new ArrayList(); //create array
-ArrayList.add(element) //kind of const
+a1.add(element) //kind of const
+//or
+ArrayList<String> a2 = new ArrayList<String>();
+    a2.add("NewElement");
 ```
 Um exemplo mais estruturado, parecido com um dicionario
 ```csharp
@@ -117,6 +137,8 @@ Console.WriteLine(names[2]);
 ```
 
 #### LIST
+Estrutura parecida com array mas mais 
+estruturado e melhor para gerenciar os atributos da lista
 ```csharp
 string[] input = { "Brachiosaurus",
 	"Amargasaurus",
