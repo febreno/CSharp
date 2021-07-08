@@ -40,7 +40,7 @@ public class car //crate class
     	}
 	public void setModel(String model)
 	{
-		this.model = model;
+		this.model = "Ferrari";
 	}
 }
 ```
