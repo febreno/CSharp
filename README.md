@@ -5,7 +5,12 @@
   transformar uma problema real em código 
   Sao encapsuladas em cada objeto
 	Criar classe separar cada tratacao em calsses
-  
+
+#### CREATE NEW PROJECT
+```csharp
+//Console App(.NET Framework)
+//windows forms(.NET Framework)
+```
 #### CLASSES
 Define objeto(s) define o que os objetos são e como se comportam
 Objetos ficam dentro de classes, cada classe pode ter mais que um objeto
