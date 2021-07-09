@@ -2,9 +2,9 @@
 ## About OOP
   OOP(Object Orientation Program) POO(Programação Orientada a Objeto)
   Esse termo foi criado para fazer a conexao do mundo real com a programacao
-  transformar uma problema real em código 
-  Sao encapsuladas em cada objeto
-	Criar classe separar cada tratacao em calsses
+  e transformar em uma solução em código 
+  São encapsuladas em cada objeto.
+Criar classe separar cada tratacao
 
 #### CREATE NEW PROJECT
 ```csharp
@@ -12,7 +12,8 @@
 //windows forms(.NET Framework)
 ```
 #### CLASSES
-Define objeto(s) define o que os objetos são e como se comportam
+Contem metodos(funcoes) nao somente objeto mas
+define objeto(s) o que os eles são e como se comportam...
 Objetos ficam dentro de classes, cada classe pode ter mais que um objeto
 modificadores de acesso:
 - public (completamente acessivel)
