@@ -151,8 +151,10 @@ string[] input = { "Brachiosaurus",
 	"Mamenchisaurus" };
 
 List<string> dinosaurs = new List<string>(input); //create a list
-
-Console.WriteLine("\nCapacity: {0}", dinosaurs.Capacity);
+//form 1 to add
+dinosaurs.Add("T-Rex");
+//form 2 to add
+parts.Add(new dinosaurs() {PartName="T-Rex", PartId=1});
 
 Console.WriteLine();
 foreach( string dinosaur in dinosaurs )
