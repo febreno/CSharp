@@ -1,0 +1,10 @@
+C:\Users\felip\source\repos\Program\Program\bin\Debug\Program.exe.config
+C:\Users\felip\source\repos\Program\Program\bin\Debug\Program.exe
+C:\Users\felip\source\repos\Program\Program\bin\Debug\Program.pdb
+C:\Users\felip\source\repos\Program\Program\obj\Debug\Program.csproj.AssemblyReference.cache
+C:\Users\felip\source\repos\Program\Program\obj\Debug\Program.Form1.resources
+C:\Users\felip\source\repos\Program\Program\obj\Debug\Program.Properties.Resources.resources
+C:\Users\felip\source\repos\Program\Program\obj\Debug\Program.csproj.GenerateResource.cache
+C:\Users\felip\source\repos\Program\Program\obj\Debug\Program.csproj.CoreCompileInputs.cache
+C:\Users\felip\source\repos\Program\Program\obj\Debug\Program.exe
+C:\Users\felip\source\repos\Program\Program\obj\Debug\Program.pdb
