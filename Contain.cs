@@ -30,16 +30,18 @@ namespace Learn //name project
             Console.WriteLine("Contain?" + result);
             Console.ReadLine();
         }
-        //static void Main(string[] args)
-        //{
-        //    var phrase = "Hello world, I love the pogramming world".ToLower();
-        //    Console.WriteLine(phrase);
-        //    Console.WriteLine("write an word for you search:");
-        //    var word = Console.ReadLine().ToLower();
-        //    var result = phrase.IndexOf(word, phrase.IndexOf(word) + 1); //search second element 
 
-        //    Console.WriteLine("Location:" + result.ToString());
-        //    Console.ReadLine();
-        //}
+        //second form
+        static void Main(string[] args)
+        {
+            var phrase = "Hello world, I love the pogramming world".ToLower();
+            Console.WriteLine(phrase);
+            Console.WriteLine("write an word for you search:");
+            var word = Console.ReadLine().ToLower();
+            var result = phrase.IndexOf(word, phrase.IndexOf(word) + 1); //search second element 
+
+            Console.WriteLine("Location:" + result.ToString());
+            Console.ReadLine();
+        }
     }
 }
