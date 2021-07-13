@@ -9,11 +9,8 @@ namespace Learn //name project
 
         static void Main(string[] args)
         {
-            string[] phrase = { "Julio", "Cley", "Felipe", "Ana", "Gessica" };
-            foreach (string p in phrase)
-            {
-                Console.WriteLine(p);
-            }
+            var phrase = "Hello world, I love the pogramming world".ToLower();
+            Console.WriteLine(phrase);
             Console.WriteLine("write an word for you search:");
             var word = Console.ReadLine().ToLower();
             var result = ""; 
