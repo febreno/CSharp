@@ -272,7 +272,7 @@ public class Account : EntityBase
 - selad
 nao pode ser herdada(geralmente se coloca no final do codigo para nao modificarem um valor)
 ```csharp
-public sealed class ProdutoRequest //selad
+selad class ProdutoRequest //selad
 {
 	public string Descricao { get; set; }
         public decimal Valor { get; set; }
