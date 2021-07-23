@@ -269,10 +269,10 @@ public class Account : EntityBase
 }
 ```
 
-- selad
+- sealad
 nao pode ser herdada(geralmente se coloca no final do codigo para nao modificarem um valor)
 ```csharp
-selad class ProdutoRequest //selad
+sealad class ProdutoRequest //sealad
 {
 	public string Descricao { get; set; }
         public decimal Valor { get; set; }
