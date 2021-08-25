@@ -1,0 +1,99 @@
+4,5,9
+Projeto Asp .NET core MVC com DB acessado pelo Entity framework(ferramente de mapeamento de obj relacional)
+
+C#(linguagem de programacao)
+.NET(plataforma de desenvolvimento CLR Common Language Runtime/ BLR Base Class Library)
+compilacao e interpretacao
+estrutura de uma aplicacao C# .NET
+
+primeiro programa
+estrutura de um programa
+dicas do VS Community
+
+data types
+operadores de atribuicao
+
+converssao de tipos string, double, float.. cascading 
+double d = 5.1;
+float f = (float)a;//convert no losing informatoions
+
+operadores aritimeticos
+
+construtores 
+public user(){
+	Nome: nome;
+	Idade: idade;
+	Email: email;
+}
+
+sobrecarga mais de uma operacao como o mesmo nome mas com listas de parametro diferentes
+
+this faz uma diferenca, pode ser usada para se referir diretamente a um atributo(diferencia atributos de variaveis locais)
+
+encapsulamento: private, para acessar por outra classe usa get set
+property
+autoproperty
+
+POO 
+variaveis ponteiro
+variaveis valor
+desalocacao da memoria
+modificadores de parametros
+operadore de coalescencia 
+double? x = null;
+double a = x ?? 5;(se o valor de a for igual a x seta o valor como 5)
+
+vetores(array unidimencional)
+modificador de parametros param
+modificador de parametro ref(X3), out()
+
+boxing(), unboxing()
+
+List
+
+matrizes
+
+program usuario criar uma matriz
+
+switch-case 
+
+expressao condicional ternaria (if inline)
+
+strings replace(), lastindex(), Tolower()
+
+DateTime struct(tipo valor) propriedades de operacao
+DateTimeKind (local, utc, unspecified)
+timespan struch(tipo valor intervalo de tempo em tricks) propriedades de operacao
+totaldays, totatl
+
+numeracao ou tipo numerado, converssao de string para numeracao(estados pedido)
+
+composicao dividir o sistemas em responsabilidades
+
+Enums
+
+
+hearnca : base
+
+upcasting e downcasting
+
+OOP
+encpsulamento
+heranca
+polimorfismo	
+
+classes abstratas(nao pode ser instanciadas soment esubcalsses)
+
+file, fileinfo, filestream, streamreader
+directory, directoryinfo
+path
+
+herdar vs cumprir contrato
+heranca multipla e o problema do diamante
+
+Generics
+delegate square() som()
+invoke
+linq
+
+linq comnotacao similar ao sql
