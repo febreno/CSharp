@@ -13,8 +13,9 @@ Criar classe separar cada tratacao
 ```
 #### CLASSES
 Contem metodos(funcoes) nao somente objeto mas
-define objeto(s) o que os eles são e como se comportam...
-Objetos ficam dentro de classes, cada classe pode ter mais que um objeto
+podem definir, conter objeto(s) o que são e como se comportam...
+cada classe pode ter mais que um objeto, podem ser acessados por outras classes dependendo dos modificadores de acesso
+
 modificadores de acesso:
 - public (completamente acessivel)
 - private (consegue acessar herdando ou dentro dela mesma)
