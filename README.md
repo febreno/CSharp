@@ -18,6 +18,13 @@ public string Myprop { get; set; }
 ```
 ctrl + space | ctrl + .
 
+##### MAIS INFORMACOES
+```csharp
+#Region "Eventos"       
+	[Agroup code] 
+#End Region
+```
+
 #### CLASSES
 Contem metodos(funcoes) nao somente objeto mas
 podem definir, conter objeto(s) o que são e como se comportam...
