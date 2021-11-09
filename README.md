@@ -14,10 +14,9 @@ Criar classe separar cada tratacao
 ##### ATALHOS
 ```csharp
 prop
-public Myprop { get; set; }
+public string Myprop { get; set; }
 ```
-ctrl + space
-ctrl + .
+ctrl + space | ctrl + .
 
 #### CLASSES
 Contem metodos(funcoes) nao somente objeto mas
