@@ -6,11 +6,19 @@
   São encapsuladas em cada objeto.
 Criar classe separar cada tratacao
 
-#### CREATE NEW PROJECT
+#### VISUAL STUDIO COMMUNITY
 ```csharp
 //Console App(.NET Framework)
 //windows forms(.NET Framework)
 ```
+##### ATALHOS
+```csharp
+prop
+public Myprop { get; set; }
+```
+ctrl + space
+ctrl + .
+
 #### CLASSES
 Contem metodos(funcoes) nao somente objeto mas
 podem definir, conter objeto(s) o que são e como se comportam...
