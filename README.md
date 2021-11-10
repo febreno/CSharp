@@ -16,7 +16,7 @@ Criar classe separar cada tratacao
 prop
 public string Myprop { get; set; }
 ```
-ctrl + space | ctrl + .
+ctrl + space | ctrl + . | ctrl + , | alt + f12 | ctrl + G | ctrl + shift + , | ctrl + shift + s
 
 ##### MAIS INFORMACOES
 ```csharp
