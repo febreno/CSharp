@@ -53,21 +53,42 @@ public class car //crate class
 ```
 #### OBJETO
 - Estado (propriedades, valores) 
-- comportamento(como ele vai reagir com outros objetos)
+- Comportamento(como ele vai reagir com outros objetos)
 - Entidade(identificador do objeto)
 representa instancia da classe
+- Objeto da classe = instancia
 ```csharp
-public class car //crate class
+//principal class
+class Program
 {
-    	var car = new Object(); //create Obj
-	car.fabrication = "Ford"; //info Obj
-	car.model = "Mustang";
-	car.year = 1969;
+	static void Main( string[] args)
+	{
+		Car test = new Car(); //instance of class
+		car.fabrication = "Ford"; //info Obj
+		car.model = "Mustang";
+		car.year = 1969;
+		car.Price = 80.000;
+	}
+}
+
+//ramification class
+public class Car
+{
+    	public string Fabrication {get; set;}
+	public string Model {get; set;}
+	public string Year {get; set;}
+	public double Price {get; set;}
+	
+	public double Desvalorization()
+	{
+		return Price * - 0.10;
+	}
 	
 	public String getCar() //get Object
 	{
         	return car; //return value
     	}
+	
 	public void setModel(String model)
 	{
 		this.model = "Ferrari";
