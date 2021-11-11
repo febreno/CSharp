@@ -1,3 +1,12 @@
+virtual, override
+
+public override bool Equals( object obj ) 
+        { 
+            EventTemplate other = obj as EventTemplate; 
+            return other != null && this.Id == other.Id; 
+        } 
+ 
+
 # CSharp C#
 ## About OOP
   OOP(Object Orientation Program) POO(Programação Orientada a Objeto)
