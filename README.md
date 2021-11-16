@@ -1,4 +1,4 @@
-virtual, override
+metodos abtratos sao virtual, override
 
 public override bool Equals( object obj ) 
         { 
